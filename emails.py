@@ -33,7 +33,7 @@ class MedicalEmailAgent:
 
     def connect(self):
         """Connexion au serveur IMAP"""
-        print("[INFO] Connexion à Gmail IMAP en cours...")
+        print("[INFO] Connexion à Gmail IMAP en cours")
         try:
             self.conn = imapclient.IMAPClient(os.getenv("IMAP_SERVER"), ssl=True)
             self.conn.login(os.getenv("EMAIL_USER"), os.getenv("EMAIL_PASSWORD"))
