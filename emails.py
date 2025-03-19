@@ -15,7 +15,7 @@ load_dotenv()
 class MedicalEmailAgent:
     def __init__(self):
         """Agent intelligent de traitement des emails"""
-        print("### Initialisation de l'agent IA médical ###")
+        print("### Initialisation de l'agent IA ###")
         self.nlp = spacy.load("fr_core_news_sm")
         self.conn = None
         self._setup_nlp_pipeline()
@@ -196,7 +196,7 @@ class MedicalEmailAgent:
 
             return results
         except Exception as e:
-            print(f"[ERROR] Erreur lors du traitement des emails : {e}")
+            print(f"[ERROR] Erreur lors du traitement des emails: {e}")
             return []
 
 if __name__ == "__main__":
